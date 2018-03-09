@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 //Welcome to Alpha Vantage! Your API key is: 8FQ71F4F56GIS2N4.
@@ -8,7 +7,6 @@ import "./App.css";
 const App = props => (
   <div className="App">
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">Welcome to React</h1>
     </header>
     <p className="App-intro">

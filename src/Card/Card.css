@@ -6,7 +6,6 @@
   flex-direction: column;
   background-color: #fff;
   border-radius: 2px;
-  display: block;
   overflow: hidden;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
@@ -44,4 +43,36 @@
 
 .card__percent {
   color: green;
+}
+
+.card__action {
+  display: block;
+  height: 40px;
+  padding: 0px 16px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.card__action__icon {
+  display: inline-block;
+  fill: currentColor;
+  position: relative;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  width: 16px;
+  color: darkblue;
+  padding: 11px 11px 11px 0px;
+  cursor: pointer;
+}
+
+.card__action__icon > * {
+  font-style: normal;
+}
+
+.card__action__label {
+  color: #1a0dab;
+  position: absolute;
+  font-size: 12px;
+  line-height: 40px;
+  cursor: pointer;
 }

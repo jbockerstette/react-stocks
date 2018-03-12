@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card/Card";
 import "./App.css";
 
 //Welcome to Alpha Vantage! Your API key is: 8FQ71F4F56GIS2N4.
@@ -6,12 +7,7 @@ import "./App.css";
 
 const App = props => (
   <div className="App">
-    <header className="App-header">
-      <h1 className="App-title">Welcome to React</h1>
-    </header>
-    <p className="App-intro">
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
+    <Card title="Snap Inc" subtitle="NYSE: SNAP" detail="17.88 USD 1.25% ^" />
   </div>
 );
 

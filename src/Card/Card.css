@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  text-align: left;
+  line-height: 20px;
+  width: 204px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 2px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.card__top {
+  padding: 16px 16px 24px;
+  flex-grow: 1;
+}
+
+.card__title {
+  display: block;
+  white-space: nowrap;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__subtitle {
+  display: block;
+  color: rgba(0, 0, 0, 0.62);
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+.card__detail {
+  display: block;
+  white-space: normal;
+}
+
+.card__price {
+  color: #3c4043;
+  font-size: 14px;
+  white-space: nowrap;
+  padding-bottom: 8px;
+}
+
+.card__percent {
+  color: green;
+}

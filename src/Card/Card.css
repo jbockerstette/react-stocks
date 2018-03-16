@@ -1,21 +1,24 @@
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-rows: 16px auto auto auto 16px auto;
+  grid-template-areas:
+    ". . ."
+    ". title ."
+    ". subtitle ."
+    ". detail ."
+    "divider divider divider"
+    ". action .";
   text-align: left;
-  line-height: 20px;
   width: 204px;
-  flex-direction: column;
   background-color: #fff;
   border-radius: 2px;
   overflow: hidden;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
-.card__top {
-  padding: 16px 16px 24px;
-  flex-grow: 1;
-}
-
 .card__title {
+  grid-area: title;
   display: block;
   white-space: nowrap;
   font-size: 18px;
@@ -24,14 +27,21 @@
 }
 
 .card__subtitle {
+  grid-area: subtitle;
   display: block;
   color: rgba(0, 0, 0, 0.62);
   font-size: 14px;
   padding-bottom: 12px;
 }
 .card__detail {
+  grid-area: detail;
   display: block;
   white-space: normal;
+}
+
+.card__divider {
+  grid-area: divider;
+  border-bottom: 1px #f2f2f2 solid;
 }
 
 .card__price {
@@ -46,22 +56,17 @@
 }
 
 .card__action {
+  grid-area: action;
   display: block;
-  height: 40px;
-  padding: 0px 16px;
-  border-top: 1px solid #f2f2f2;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .card__action__icon {
   display: inline-block;
   fill: currentColor;
-  position: relative;
-  height: 16px;
   font-size: 16px;
-  line-height: 16px;
-  width: 16px;
   color: darkblue;
-  padding: 11px 11px 11px 0px;
   cursor: pointer;
 }
 
@@ -71,8 +76,7 @@
 
 .card__action__label {
   color: #1a0dab;
-  position: absolute;
-  font-size: 12px;
-  line-height: 40px;
+  padding-left: 16px;
+  font-size: 16px;
   cursor: pointer;
 }

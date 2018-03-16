@@ -19,7 +19,6 @@
 
 .card__title {
   grid-area: title;
-  display: block;
   white-space: nowrap;
   font-size: 18px;
   overflow: hidden;
@@ -28,14 +27,12 @@
 
 .card__subtitle {
   grid-area: subtitle;
-  display: block;
   color: rgba(0, 0, 0, 0.62);
   font-size: 14px;
   padding-bottom: 12px;
 }
 .card__detail {
   grid-area: detail;
-  display: block;
   white-space: normal;
 }
 
@@ -57,13 +54,11 @@
 
 .card__action {
   grid-area: action;
-  display: block;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
 .card__action__icon {
-  display: inline-block;
   fill: currentColor;
   font-size: 16px;
   color: darkblue;
